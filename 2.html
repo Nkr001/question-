@@ -1,0 +1,56 @@
+<div class="algorithm-problem complete-problem-statement dark"><p>You are given a number&nbsp;<em>N.&nbsp;</em>A number is called beautiful if, for every digit&nbsp;<em>x</em>&nbsp;in the number, there are&nbsp;<em>x&nbsp;</em>occurrences of it in the number.</p>
+
+<ul>
+	<li><em>1</em> is beautiful because <em>1</em>&nbsp;has <em>1</em> occurrence.</li>
+	<li><em>3133</em> is beautiful because <em>1</em>&nbsp;has <em>1</em> occurrence and <em>3</em>&nbsp;has <em>3</em>&nbsp;occurrences.</li>
+	<li><em>224</em> is not beautiful because <em>4</em>&nbsp;does not have <em>4</em>&nbsp;occurrences.</li>
+</ul>
+
+<p><strong>Task</strong></p>
+
+<p>Determine the smallest beautiful number which is greater than&nbsp;<em>N.</em></p>
+
+<p><strong>Example</strong></p>
+
+<p><em>Assumption</em></p>
+
+<ul>
+	<li><em>N = 1</em></li>
+</ul>
+
+<p><em>Approach</em></p>
+
+<p><em>22&nbsp;</em>is the smallest beautiful number greater than <em>1.</em></p>
+
+<p><strong>Function description</strong></p>
+
+<p>Complete the <em>beautiful</em><em>Number&nbsp;</em>function provided in the editor. This function takes the following <em>1</em>&nbsp;parameter&nbsp;and returns the required answer<em>:</em></p>
+
+<ul>
+	<li><em>N</em>: Represents the value of integer <em>N</em></li>
+</ul>
+
+<p><strong>Input format</strong></p>
+
+<p><strong>Note: </strong>This is the input format that you must use to provide custom input (available above the <strong>Compile and Test</strong> button).</p>
+
+<ul>
+	<li>The first line contains&nbsp;<em>T&nbsp;</em>- the number of test cases,&nbsp;<em>T</em> also specifies the number of times you have to run the <em>beautiful</em><em>Number&nbsp;</em>function on a different set of inputs.&nbsp;</li>
+	<li>For each test case:
+	<ul>
+		<li>The first line contains a single&nbsp;integer&nbsp;<em>N.</em></li>
+	</ul>
+	</li>
+</ul>
+
+<p><strong>Output format</strong></p>
+
+<p>For each test case in a new line. print a single&nbsp;integer&nbsp;that represents&nbsp;the smallest beautiful number that is greater than&nbsp;<em>N.</em></p>
+
+<p><strong>Constraints</strong></p>
+
+<p><strong><span class="mathjax-latex"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>&amp;#x2264;</mo><mi>T</mi><mo>&amp;#x2264;</mo><msup><mn>10</mn><mn>5</mn></msup><mspace linebreak=&quot;newline&quot; /><mn>1</mn><mo>&amp;#x2264;</mo><mi>N</mi><mo>&amp;#x2264;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>12</mn></mrow></msup></math>" role="presentation" style="font-size: 175%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.106ex" height="6.912ex" viewBox="0 -1145.1 6073.5 2976" role="img" focusable="false" style="vertical-align: -4.252ex;" aria-hidden="true"><defs><path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="1" id="E1-MJMAIN-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path stroke-width="1" id="E1-MJMATHI-54" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path stroke-width="1" id="E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path stroke-width="1" id="E1-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path stroke-width="1" id="E1-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path><path stroke-width="1" id="E1-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E1-MJMAIN-31" x="0" y="0"></use><use xlink:href="#E1-MJMAIN-2264" x="778" y="0"></use><use xlink:href="#E1-MJMATHI-54" x="1834" y="0"></use><use xlink:href="#E1-MJMAIN-2264" x="2816" y="0"></use><g transform="translate(3873,0)"><use xlink:href="#E1-MJMAIN-31"></use><use xlink:href="#E1-MJMAIN-30" x="500" y="0"></use><use transform="scale(0.914)" xlink:href="#E1-MJMAIN-35" x="1094" y="396"></use></g><g transform="translate(0,-1543)"><use xlink:href="#E1-MJMAIN-31" x="0" y="0"></use><use xlink:href="#E1-MJMAIN-2264" x="778" y="0"></use><use xlink:href="#E1-MJMATHI-4E" x="1834" y="0"></use><use xlink:href="#E1-MJMAIN-2264" x="3000" y="0"></use><g transform="translate(4057,0)"><use xlink:href="#E1-MJMAIN-31"></use><use xlink:href="#E1-MJMAIN-30" x="500" y="0"></use><g transform="translate(1001,362)"><use transform="scale(0.914)" xlink:href="#E1-MJMAIN-31"></use><use transform="scale(0.914)" xlink:href="#E1-MJMAIN-32" x="500" y="0"></use></g></g></g></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>T</mi><mo>≤</mo><msup><mn>10</mn><mn>5</mn></msup><mspace linebreak="newline"></mspace><mn>1</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>12</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-1">1 \le T \le 10^5 \\ 1 \le N \le 10^{12}</script></span></strong></p>
+
+<p><strong>Code snippets (also called starter code/boilerplate code)</strong></p>
+
+<p>This question has code snippets for C, CPP, Java, and Python.</p></div>
